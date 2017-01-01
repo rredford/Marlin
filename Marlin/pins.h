@@ -23,158 +23,92 @@
 #ifndef PINS_H
 #define PINS_H
 
-#if MB(GEN7_CUSTOM)
-  #include "pins_GEN7_CUSTOM.h"
-#elif MB(GEN7_12)
-  #include "pins_GEN7_12.h"
-#elif MB(GEN7_13)
-  #include "pins_GEN7_13.h"
-#elif MB(GEN7_14)
-  #include "pins_GEN7_14.h"
-#elif MB(CNCONTROLS_11)
-  #include "pins_CNCONTROLS_11.h"
-#elif MB(CNCONTROLS_12)
-  #include "pins_CNCONTROLS_12.h"
-#elif MB(CHEAPTRONIC)
-  #include "pins_CHEAPTRONIC.h"
-#elif MB(SETHI)
-  #include "pins_SETHI.h"
-#elif MB(MIGHTYBOARD_REVE)
-  #include "pins_MIGHTYBOARD_REVE.h"
-#elif MB(RAMPS_OLD)
-  #include "pins_RAMPS_OLD.h"
-#elif MB(RAMPS_13_EFB)
-  #define IS_RAMPS_EFB
-  #include "pins_RAMPS_13.h"
-#elif MB(RAMPS_13_EEB)
-  #define IS_RAMPS_EEB
-  #include "pins_RAMPS_13.h"
-#elif MB(RAMPS_13_EFF)
-  #define IS_RAMPS_EFF
-  #include "pins_RAMPS_13.h"
-#elif MB(RAMPS_13_EEF)
-  #define IS_RAMPS_EEF
-  #include "pins_RAMPS_13.h"
-#elif MB(RAMPS_13_SF)
-  #define IS_RAMPS_SF
-  #include "pins_RAMPS_13.h"
-#elif MB(RAMPS_14_EFB)
-  #define IS_RAMPS_EFB
-  #include "pins_RAMPS.h"
-#elif MB(RAMPS_14_EEB)
-  #define IS_RAMPS_EEB
-  #include "pins_RAMPS.h"
-#elif MB(RAMPS_14_EFF)
-  #define IS_RAMPS_EFF
-  #include "pins_RAMPS.h"
-#elif MB(RAMPS_14_EEF)
-  #define IS_RAMPS_EEF
-  #include "pins_RAMPS.h"
-#elif MB(RAMPS_14_SF)
-  #define IS_RAMPS_SF
-  #include "pins_RAMPS.h"
-#elif MB(GEN6)
-  #include "pins_GEN6.h"
-#elif MB(GEN6_DELUXE)
-  #include "pins_GEN6_DELUXE.h"
-#elif MB(SANGUINOLOLU_11)
-  #include "pins_SANGUINOLOLU_11.h"
-#elif MB(SANGUINOLOLU_12)
-  #include "pins_SANGUINOLOLU_12.h"
-#elif MB(MELZI)
-  #include "pins_MELZI.h"
-#elif MB(STB_11)
-  #include "pins_STB_11.h"
-#elif MB(AZTEEG_X1)
-  #include "pins_AZTEEG_X1.h"
-#elif MB(MELZI_MAKR3D)
-  #include "pins_MELZI_MAKR3D.h"
-#elif MB(AZTEEG_X3)
-  #include "pins_AZTEEG_X3.h"
-#elif MB(AZTEEG_X3_PRO)
-  #include "pins_AZTEEG_X3_PRO.h"
-#elif MB(ULTIMAKER)
-  #include "pins_ULTIMAKER.h"
-#elif MB(ULTIMAKER_OLD)
-  #include "pins_ULTIMAKER_OLD.h"
-#elif MB(ULTIMAIN_2)
-  #include "pins_ULTIMAIN_2.h"
-#elif MB(3DRAG)
-  #include "pins_3DRAG.h"
-#elif MB(K8200)
-  #include "pins_K8200.h"
-#elif MB(K8400)
-  #include "pins_K8400.h"
-#elif MB(TEENSYLU)
-  #include "pins_TEENSYLU.h"
-#elif MB(RUMBA)
-  #include "pins_RUMBA.h"
-#elif MB(PRINTRBOARD)
-  #include "pins_PRINTRBOARD.h"
-#elif MB(PRINTRBOARD_REVF)
-  #include "pins_PRINTRBOARD_REVF.h"
-#elif MB(BRAINWAVE)
-  #include "pins_BRAINWAVE.h"
-#elif MB(BRAINWAVE_PRO)
-  #include "pins_BRAINWAVE_PRO.h"
-#elif MB(SAV_MKI)
-  #include "pins_SAV_MKI.h"
-#elif MB(TEENSY2)
-  #include "pins_TEENSY2.h"
-#elif MB(GEN3_PLUS)
-  #include "pins_GEN3_PLUS.h"
-#elif MB(GEN3_MONOLITHIC)
-  #include "pins_GEN3_MONOLITHIC.h"
-#elif MB(MEGATRONICS)
-  #include "pins_MEGATRONICS.h"
-#elif MB(MINITRONICS)
-  #include "pins_MINITRONICS.h"
-#elif MB(MEGATRONICS_2)
-  #include "pins_MEGATRONICS_2.h"
-#elif MB(MEGATRONICS_3)
-  #include "pins_MEGATRONICS_3.h"
-#elif MB(MEGATRONICS_31)
-  #define MEGATRONICS_31
-  #include "pins_MEGATRONICS_3.h" 
-#elif MB(OMCA_A)
-  #include "pins_OMCA_A.h"
-#elif MB(OMCA)
-  #include "pins_OMCA.h"
-#elif MB(RAMBO)
-  #include "pins_RAMBO.h"
-#elif MB(MINIRAMBO)
-  #include "pins_MINIRAMBO.h"
-#elif MB(ELEFU_3)
-  #include "pins_ELEFU_3.h"
-#elif MB(5DPRINT)
-  #include "pins_5DPRINT.h"
-#elif MB(LEAPFROG)
-  #include "pins_LEAPFROG.h"
-#elif MB(BAM_DICE)
-  #include "pins_RAMPS.h"
-#elif MB(BAM_DICE_DUE)
-  #include "pins_BAM_DICE_DUE.h"
-#elif MB(FELIX2)
-  #include "pins_FELIX2.h"
-#elif MB(MKS_BASE)
-  #include "pins_MKS_BASE.h"
-#elif MB(RIGIDBOARD)
-  #include "pins_RIGIDBOARD.h"
-#elif MB(RIGIDBOARD_V2)
-  #include "pins_RIGIDBOARD_V2.h"
-#elif MB(MEGACONTROLLER)
-  #include "pins_MEGACONTROLLER.h"
-#elif MB(BQ_ZUM_MEGA_3D)
-  #include "pins_BQ_ZUM_MEGA_3D.h"
-#elif MB(AJ4P)
-  #include "pins_AJ4P.h"
-#elif MB(MKS_13)
-  #include "pins_MKS_13.h"
-#elif MB(SAINSMART_2IN1)
-  #include "pins_SAINSMART_2IN1.h"
-#else
-  #error "Unknown MOTHERBOARD value set in Configuration.h"
-#endif
+    #define X_STEP_PIN         54
+    #define X_DIR_PIN          55
+    #define X_ENABLE_PIN       38
+    #define X_MIN_PIN           3
+    #define X_MAX_PIN           2
+
+    #define Y_STEP_PIN         60
+    #define Y_DIR_PIN          61
+    #define Y_ENABLE_PIN       56
+    #define Y_MIN_PIN          14
+    #define Y_MAX_PIN          15
+
+    #define Z_STEP_PIN         46
+    #define Z_DIR_PIN          48
+    #define Z_ENABLE_PIN       62
+    #define Z_MIN_PIN          18
+    #define Z_MAX_PIN          19
+
+    #define E0_STEP_PIN        36
+    #define E0_DIR_PIN         34
+    #define E0_ENABLE_PIN      30
+
+    #define E1_STEP_PIN        26
+    #define E1_DIR_PIN         28
+    #define E1_ENABLE_PIN      24
+
+
+    #define SDPOWER            -1
+    #define SDSS               53
+    #define LED_PIN            13
+
+
+    #define FAN_PIN            9 // (Sprinter config)
+
+
+  #define PS_ON_PIN          12
+
+
+    #define KILL_PIN           27
+
+
+    #define HEATER_0_PIN       8   // EXTRUDER 1
+
+    #define HEATER_1_PIN       -1
+
+    #define HEATER_2_PIN       -1
+
+  #define TEMP_0_PIN         13   // ANALOG NUMBERING
+  #define TEMP_1_PIN         15   // ANALOG NUMBERING
+    #define TEMP_2_PIN         -1   // ANALOG NUMBERING
+
+      #define HEATER_BED_PIN     10    // BED
+
+  #define TEMP_BED_PIN       14   // ANALOG NUMBERING
+
+  #ifdef NUM_SERVOS
+    #define SERVO0_PIN         11
+  #endif
+
+
+  #ifdef ULTRA_LCD
+
+      #define LCD_PINS_RS 41
+      #define LCD_PINS_ENABLE 31
+      #define LCD_PINS_D4 33
+      #define LCD_PINS_D5 23
+      #define LCD_PINS_D6 42
+      #define LCD_PINS_D7 44
+
+      #ifdef REPRAP_DISCOUNT_SMART_CONTROLLER
+        #define BEEPER_PIN 37
+        #define BTN_EN1 25
+        #define BTN_EN2 29
+        #define BTN_ENC 35
+
+        #define SD_DETECT_PIN 49
+
+      #endif
+
+
+  #endif //ULTRA_LCD
+
+
+
+
+
 
 // Define certain undefined pins
 #ifndef X_MS1_PIN
